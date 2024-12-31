@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LeetStat</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <h1>LeetStat</h1>
+            <!-- User -->
+            <div class="user-container">
+                <p>Enter Your <strong>username</strong> below:</p>
+                <div class="user-container__input">
+                    <input
+                        type="text"
+                        name="user-input"
+                        id="user-input"
+                        placeholder="Enter Your Username Here"
+                    />
+                    <button id="fetch-btn">Fetch</button>
+                </div>
+            </div>
+            <!-- Stats -->
+
+            <div class="stats-container">
+                <div class="stats-container__progress">
+                    <div class="stats-container__progress-item">
+                        <div id="easy-progress" class="circle">
+                            <span id="easy-label"> </span>
+                            <p>Easy</p>
+                        </div>
+                    </div>
+                    <div class="stats-container__progress-item">
+                        <div id="medium-progress" class="circle">
+                            <span id="medium-label"> </span>
+                            <p>Medium</p>
+                        </div>
+                    </div>
+                    <div class="stats-container__progress-item">
+                        <div id="hard-progress" class="circle">
+                            <span id="hard-label"> </span>
+                            <p>Hard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-container__card">
+                    <!-- Populated from javascript -->
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
